@@ -10,7 +10,7 @@ class Redpanda < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/jackietung-redpanda/redpanda/releases/download/v24.1.99/rpk-darwin-arm64.zip"
-      sha256 "ac6168224ec8d3bcd645e3bffbf19db1778823b5d0944256c51313a1bc7b948b"
+      sha256 "04ad82c33c607896dfb95ab603114a36ecdc3830406b86213e48de0a1c5e094c"
 
       def install
         bin.install ".rpk.ac-connect"
@@ -20,7 +20,7 @@ class Redpanda < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/jackietung-redpanda/redpanda/releases/download/v24.1.99/rpk-darwin-amd64.zip"
-      sha256 "8471e98fbdc6511758370ecda313e1dc711e41ecb8f0766756d14f062be35657"
+      sha256 "a1700d4a681a806a99a84b1d727fdefe84d674d5ec3fd947a1f16d41380cbdf4"
 
       def install
         bin.install ".rpk.ac-connect"
@@ -33,7 +33,7 @@ class Redpanda < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jackietung-redpanda/redpanda/releases/download/v24.1.99/rpk-linux-arm64.zip"
-      sha256 "cdc5396cd4761dc6a6c07a00834544741a2649b78f06ad917a90fbef7cdbcd0c"
+      sha256 "bc54fe2e8496870b3233e54a28149a215a461f320383c5668a498893cc7a25f3"
 
       def install
         bin.install ".rpk.ac-connect"
@@ -43,7 +43,7 @@ class Redpanda < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/jackietung-redpanda/redpanda/releases/download/v24.1.99/rpk-linux-amd64.zip"
-      sha256 "c7b1ba6429951510a4864cdcba91cfe2476f0f55937010def902ec40d66bdef4"
+      sha256 "1fd4d37ca3f3fe7d8f221003eb005a7ec8d9b3d1bb8035edbf1453277bd32a32"
 
       def install
         bin.install ".rpk.ac-connect"
